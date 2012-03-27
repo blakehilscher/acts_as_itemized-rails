@@ -21,15 +21,15 @@ ActiveRecord::Schema.define(:version => 20120327002918) do
   end
 
   create_table "itemized_items", :force => true do |t|
-    t.integer  "owner_id"
-    t.string   "owner_type"
+    t.integer  "itemizable_id"
+    t.string   "itemizable_type"
     t.integer  "position"
     t.boolean  "checked"
     t.string   "content"
     t.integer  "score"
     t.string   "item_type"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end
